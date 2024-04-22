@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Sidebar.css'; 
 
 const Sidebar = () => {
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
 
     const handleToggle = () => {
         setShow(!show);
@@ -20,10 +20,10 @@ const Sidebar = () => {
                     </div>
                     <div className="links">
                         <ul>
-                            <li><Link to="dashboard">Dashboard</Link></li>
-                            <li><Link to="/home">Home</Link></li>
-                            <li><Link to="/loan">Loan</Link></li>
-                            <li><Link to="/list">List</Link></li>
+                        <Link to="/"> <li>Dashboard</li></Link>
+                        <Link to="/home">  <li>Home</li></Link>
+                        <Link to="/loan"><li>Loan</li></Link>
+                        <Link to="/list"> <li>List</li></Link>
                         </ul>
                     </div>
                     <button>log out</button>

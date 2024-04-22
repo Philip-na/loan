@@ -3,7 +3,7 @@ import './Button.css';
 import Form from './Form/Form';
 
 const Button = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   const handleShow = () => {
     setShow(!show);
@@ -14,12 +14,15 @@ const Button = () => {
       <button onClick={handleShow}>
         <b>Get Loan</b>
       </button>
-      <div>
+      
         {show && (
+          <div className='over-lay' >
+            <button className='btn' onClick={handleShow}>close</button>
           <Form/>
+          </div>
         )}
       </div>
-    </div>
+    
   );
 };
 

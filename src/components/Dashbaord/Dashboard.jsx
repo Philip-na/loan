@@ -1,7 +1,9 @@
+import Cards from "../Features/Homedetails/cards/Card";
 import Pagelayout from "../Pagelayout/Pagelayout";
 import Sidebar from "../Sidebar/Sidebar";
 import './Dashbaord.css';
 import Dashboardcard from "./Dashboardcards/Dashboardcard";
+
 const Dashbaord = () => {
     return ( 
         <div className="dash-container">
@@ -19,7 +21,8 @@ const Dashbaord = () => {
           </div>
             </div>
             </div>
-           <Dashboardcard/>
+           <Dashboardcard/> 
+          
           </div>
         </div>
      );

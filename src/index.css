@@ -3,11 +3,18 @@
   padding: 0;
 }
 .page-content{
-  margin: auto;
+  margin:  auto;
   width: 70%;
   height: 100vh;
-
   margin-right: 9.8rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  
+}
+button{
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  background: skyblue;
 }

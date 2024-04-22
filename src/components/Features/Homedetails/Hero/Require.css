@@ -1,0 +1,39 @@
+.requirements-sec{
+    min-height: 150px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.requirements{
+    
+    min-width: 80px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(87, 156, 122);
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.requirements span{
+    top: -10%;
+    left: 34%;
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    padding: 10px;
+}

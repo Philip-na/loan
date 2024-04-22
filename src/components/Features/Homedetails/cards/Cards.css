@@ -1,6 +1,12 @@
+.cards{
+   display: flex; 
+   flex-wrap: wrap;
+   
+   width: 100%;
+}
 .animated-card {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 20px;

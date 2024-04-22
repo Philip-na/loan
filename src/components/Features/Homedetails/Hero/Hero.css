@@ -1,0 +1,8 @@
+.hero-section{
+    margin-top: 1rem;
+    width: 100%;
+    min-height: 250px;
+}
+.hero-section .top{
+  height: 200px;
+}
