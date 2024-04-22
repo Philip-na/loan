@@ -2,48 +2,88 @@ import React, { useState } from 'react';
 import './Form.css'
 
 const Form = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    phoneNumber: '',
-    birthDate: '',
-    gender: '',
-    address: '',
-    city: '',
-    country: ''
+
+const [formData, setFormData] = useState({
+  fullName: '',
+  idNumber: '',
+  email: '',
+  amount: ''
+});
+
+
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData({
+    ...formData,
+    [name]: value
   });
+};
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log('Form submitted:', formData);
+
+ 
+};
 
   return (
     
 <section className="container">
-      <header>Registration Form</header>
-      <form className="form" onSubmit={handleSubmit}>
-          <div className="input-box">
-              <label>Full Name</label>
-              <input 
-                required
-                placeholder="Enter full name"
-                type="text"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleChange}
-              />
-          </div>
-          
-          <button type="submit">Submit</button>
+<div>
+      <h2>Loan Application Form</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            value={formData.fullName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="idNumber">ID Number:</label>
+          <input
+            type="text"
+            id="idNumber"
+            name="idNumber"
+            value={formData.idNumber}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="amount">Amount to Borrow:</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            value={formData.amount}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <button type="submit">Submit</button>
       </form>
+    </div>
     </section>
     
     
