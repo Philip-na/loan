@@ -1,60 +1,35 @@
-.dash-container{
-    width: 100%;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    
-    gap: 3rem;
-   
-}
-
-.sider{
-    width: 250px;
-}
-.content{ 
-    margin: auto;
-   width: 100%;
-   align-items: center;  
-   
-   min-height: 100vh;
-}
-.head-content{
-  width: 100%;
-  margin: auto;
-  flex-direction: column;
+.dash-container {
+width:  100%;
+  min-height: 100vh;
   display: flex;
-   justify-content: center;
-   z-index: -1;
-}
-.head-content h1{
-    text-align: left;
-    
-
-}
-
-
-.small-hero{
-    margin: auto;
-    width: 100%;
-    
+  flex-direction: column;
   
 }
-.promo_card{
-    
-    width: 80%;
-    color: #fff;
-    margin-top: 10px;
-    border-radius: 8px;
-    padding: 0.5rem 1rem 1rem 3rem;
-    background-image: url(../../../public/images/pexels-pixabay-259209.jpg);
-    background-size: cover;
-  }
-  .promo_card h1, .promo_card span, button{
-    margin: 10px;
-  }
-  .promo_card button{
-    display: block;
-    padding: 6px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+
+.small-hero {
+
+  width: 100%;
+  background-size: cover;
+  background-image: url(/images/pexels-pixabay-259209.jpg);
+}
+.promo_card {
+  width: 100%;
+  color: var(--secondary);
+ 
+  border-radius: 0 0 8px 8px;
+  padding: 0.5rem 1rem 1rem 3rem;
+ 
+
+}
+.promo_card h1,
+.promo_card span,
+button {
+  margin: 10px;
+}
+.promo_card button {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}

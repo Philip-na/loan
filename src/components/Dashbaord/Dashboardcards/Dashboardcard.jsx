@@ -9,7 +9,7 @@ const Dashboardcard = () => {
   ];
 
   return (
-    <div className="loan-company-cards">
+    <div className="inner-width loan-company-cards">
       {cardData.map((data, index) => (
         <div key={index} className="card">
           <h2>{data.title}</h2>

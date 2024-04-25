@@ -1,6 +1,35 @@
-*{
+:root{
+  --primary: rgb(175,20,75);
+  --dark: rgb(46,49,53);
+  --white: #fff;
+  --skyblue: skyblue;
+  --secondary: #321554;
+  --green: rgb(36,140,53);
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
   margin: 0;
-  padding: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
 }
 .page-content{
   margin:  auto;
@@ -16,5 +45,35 @@ button{
   padding: 10px;
   font-size: 16px;
   border-radius: 10px;
-  background: skyblue;
+  background: var(--green);
+  color: var(--white);
 }
+ul, li{
+  margin-block-start: 0;
+}
+
+.inner-width{
+  width: 980px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 980px){
+  .inner-width{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

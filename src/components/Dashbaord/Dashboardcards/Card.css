@@ -1,8 +1,9 @@
 .loan-company-cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 85%;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 1rem;
     
   }
   
@@ -11,12 +12,11 @@
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     text-align: center;
-    width: 250px;
-    margin: 10px;
+    width: 100%;
     position: relative;
     overflow: hidden;
-    background-color: #321554;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--white);
   }
   .card::after{
     content: '';
@@ -24,7 +24,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #36BFFF;
+    background: var(--green);
     top: -5%;
     left: -5%;
   }
@@ -32,14 +32,4 @@
     width: 100%;
   }
   
-  /* .card h2 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 20px;
-    color: #555;
-    margin: 0;
-  } */
   

@@ -1,0 +1,77 @@
+header{
+    background-color: var(--primary);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+
+}
+nav{
+    height:10vh;
+
+}
+
+nav *{
+    color: #f2f5f7;
+    font-family: sans-serif;
+    
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 100%;  
+    align-items: center;
+   
+    text-transform: uppercase;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+.nav-links li a:hover, .nav-links li a.active{
+    color: var(--skyblue);
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: var(--skyblue);
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before, .nav-links li a.active::before{
+    width: 80%;
+}
+
+li.end{
+    margin-left: auto;
+
+}
+/*Styling Buttons*/
+.login-button{
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+
+
+

@@ -3,6 +3,7 @@ import Dashboard from './components/Dashbaord/Dashboard';
 import Home from './components/Pages/Home/Home';
 import Loan from './components/Pages/Loan/Loan'
 import Pagelayout from './components/Pagelayout/Pagelayout';
+import Login from './components/Login/Login';
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     <>
     <BrowserRouter>
     <Routes >
+    <Route path='/login' element={<Login/>}/>
       <Route element={<Pagelayout/>}>
+        
       <Route  index element={<Dashboard/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/loan' element={<Loan/>}/>
