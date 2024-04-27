@@ -1,4 +1,4 @@
-import Hero from '../../Features/Homedetails/Hero/Hero';
+
 import Homecards from '../../Features/Homedetails/Homecards';
 import './Home.css'
 

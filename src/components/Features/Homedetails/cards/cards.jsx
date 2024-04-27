@@ -5,6 +5,7 @@ import Card from './Card'
 
 const Cards = () => {
 
+
    const[loan, setLoan]= useState(
     [{title:'Amount', intrest:1200, period:'In 2 weeks', id:1 },
     {title:'Amount', intrest:1250, period:'In 3 weeks', id:2},

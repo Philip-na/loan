@@ -1,0 +1,72 @@
+{
+  "loans": [
+    {
+      "loanTitle": "Loan UGX 20,000,000",
+      "loanAmount": 20000000,
+      "startDate": "2021-09-29",
+      "endDate": "2022-09-29",
+      "interestRate": 0.05,
+      "loanStatus": "Approved",
+      "paybackPerMonth": 10000,
+      "id": "3222"
+    },
+    {
+      "loanTitle": "Loan USD 10,000",
+      "loanAmount": 10000,
+      "startDate": "2021-11-15",
+      "endDate": "2022-11-15",
+      "interestRate": 0.03,
+      "loanStatus": "Pending",
+      "paybackPerMonth": 500,
+      "id": "ea63"
+    },
+    {
+      "loanTitle": "Loan EUR 30,000",
+      "loanAmount": 30000,
+      "startDate": "2022-01-10",
+      "endDate": "2023-01-10",
+      "interestRate": 0.06,
+      "loanStatus": "Rejected",
+      "paybackPerMonth": 2000,
+      "id": "eb0e"
+    },
+    {
+      "loanTitle": "Loan KES 500,000",
+      "loanAmount": 500000,
+      "startDate": "2021-08-01",
+      "endDate": "2022-08-01",
+      "interestRate": 0.04,
+      "loanStatus": "Approved",
+      "paybackPerMonth": 25000,
+      "id": "45a8"
+    },
+    {
+      "loanTitle": "Loan INR 1,000,000",
+      "loanAmount": 1000000,
+      "startDate": "2021-12-20",
+      "endDate": "2023-12-20",
+      "interestRate": 0.08,
+      "loanStatus": "Approved",
+      "paybackPerMonth": 40000,
+      "id": "1338"
+    },
+    {
+      "id": "fb0d",
+      "name": "NABIKAMBA PHILIP",
+      "email": "nabikamba14@gmail.com",
+      "phone": "0774563649",
+      "amount": "200000000",
+      "duration": "6",
+      "reason": "dddd"
+    },
+    {
+      "id": "9425",
+      "name": "NABIKAMBA PHILIP",
+      "email": "",
+      "phone": "0774563649",
+      "amount": "7000000",
+      "duration": "6",
+      "reason": "9999999"
+    }
+  ]
+}

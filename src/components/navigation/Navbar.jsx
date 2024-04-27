@@ -1,38 +1,51 @@
 import "./nav.css";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  
   const links = [
     {
       title: "Home",
+      url: "/home",
+    },
+    {
+      title: "Get Loan",
       url: "/",
     },
     {
-      title: "Loan",
-      url: "loan",
+      title: "MY Loan",
+      url: "/loan",
     },
 
     {
       title: "Services",
-      url: "services",
+      url: "/services",
     },
     {
       title: "Contact Us",
-      url: "contact-us",
+      url: "/contact-us",
     },
   ];
+
+  const navigate = useNavigate();
+
+  const logout = () => {
+    localStorage.removeItem("user");
+    navigate("/login");
+  };
   return (
     <header>
       <nav className="inner-width">
-        <ul class="nav-links">
+        <ul className="nav-links">
           {links.map((link) => (
             <li>
-              <NavLink to={link.url} activeClassName="active">
+              <NavLink key={link.url} to={link.url} >
                 {link.title}
               </NavLink>
             </li>
           ))}
-          <li className="end">
-            <button class="login-button" href="#">
+          <li key='endBtn' className="end">
+            <button onClick={logout} className="login-button" href="#">
               Logout
             </button>
           </li>
